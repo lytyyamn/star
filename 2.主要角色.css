@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0
+}
+
+em,
+i {
+  font-style: normal
+}
+
+li {
+  list-style: none
+}
+
+img {
+  /* border 0 照顾低版本浏览器 如果 图片外面包含了链接会有边框的问题 */
+  border: 0;
+  /* 取消图片底侧有空白缝隙的问题 */
+  vertical-align: middle
+}
+
+a {
+  text-decoration: none
+}
+
+button,
+input {
+  /* "\5B8B\4F53" 就是宋体的意思 这样浏览器兼容性比较好 */
+  font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif
+}
+
+body {
+  zoom: 118%;
+  -moz-transform: scale(1.2);
+  /* 兼容Firefox */
+  -webkit-transform: scale(1.2);
+  /* 兼容Chrome和Safari */
+  transform: scale(1.2);
+  transform-origin: 0 0;
+  /* 设置缩放原点为左上角 */
+}
+
+body {
+  /* CSS3 抗锯齿形 让文字显示的更加清晰 */
+  -webkit-font-smoothing: antialiased;
+  background-color: #fff;
+  font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+  /* color: #666 */
+}
+
+.hide,
+.none {
+  display: none
+}
+
+/* 清除浮动 */
+.clearfix:after {
+  visibility: hidden;
+  clear: both;
+  display: block;
+  content: ".";
+  height: 0
+}
+
+.clearfix {
+  *zoom: 1
+}
+
+/* 初始化end */
+.w {
+  /* margin: 0 auto; */
+}
+
+body {
+  background-color: #dc9fdd;
+}
+
+
+.bigbox {
+  background: url(img/背景1.jpg) no-repeat;
+  /* position: relative; */
+  width: 1078px;
+  height: 825px;
+  /* background-color: #ccc; */
+}
+
+header {
+  height: 50px;
+  background-color: rgba(148, 61, 117, 0.7);
+}
+
+/* logo start */
+.logo {
+  float: left;
+  margin-top: 3px;
+}
+
+img {
+  height: 40px;
+
+}
+
+header ul li {
+  float: right;
+  margin-right: 25px;
+  margin-top: 5px;
+}
+
+/* logo end */
+nav {
+  height: 35px;
+  position: relative;
+  top: 0;
+  /* background-color: blue; */
+  background: rgba(0, 0, 0, 0.7);
+}
+
+nav ul li a {
+  color: #551a8b
+}
+
+.m {
+  border-bottom: 2px solid #dc9fdd;
+  color: #dc9fdd;
+}
+
+nav ul li {
+  color: #dc9fdd;
+  float: left;
+  line-height: 35px;
+  font-size: 14px;
+  margin-right: 20px;
+  padding: 0 10px;
+}
+
+nav ul li a:hover {
+  border-bottom: 2px solid #dc9fdd;
+  color: #dc9fdd;
+}
+
+nav ul .music {
+  position: relative;
+  margin-top: 3px;
+  /* right: 120px; */
+  height: 30px;
+  width: 300px;
+  line-height: 28px;
+  background-color: #6b1f6c;
+  border-radius: 15px;
+  float: right;
+}
+
+nav ul .music span {
+  position: absolute;
+  top: 0;
+  right: 14px;
+}
+
+audio {
+  position: absolute;
+  top: 0x;
+  right: 120px;
+  height: 30px;
+  width: 230px;
+}
+
+/* nav end */
+/* box start */
+.box {
+  position: relative;
+  height: 742px;
+  background-color: rgba(0, 0, 0, 0.7);
+
+}
+
+/* role start */
+
+.role {
+  float: left;
+  height: 740px;
+  width: 938px;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin-left: 70px;
+  border-radius: 15%;
+}
+
+
+.role ul li {
+  float: left;
+  height: 216px;
+  width: 384px;
+  margin-top: 24px;
+  margin-left: 57px;
+  /* background-color: rgb(255, 255, 255); */
+}
+
+.role ul li img {
+  float: left;
+  height: 160px;
+  width: 160px;
+  /* background-color: aqua; */
+  border-radius: 50%;
+  margin-top: 28px;
+  margin-left: 10px;
+}
+
+.role ul li:nth-child(2n) img {
+  float: right;
+  height: 160px;
+  width: 160px;
+  /* background-color: aqua; */
+  border-radius: 50%;
+  margin-top: 28px;
+  margin-right: 10px;
+}
+
+.text {
+  float: right;
+  margin-top: 28px;
+  margin-right: 20px;
+  height: 170px;
+  width: 170px;
+  color: #fcfcfc;
+  /* background-color: aqua; */
+}
+
+h2 {
+  /* display: inline-block; */
+  color: #dc9fdd;
+}
+
+.text p {
+  margin-top: 10px;
+}
+
+/* role end */
+
+.zuo {
+  position: absolute;
+  left: 5px;
+  top: 340px;
+}
+
+.you {
+  position: absolute;
+  right: 5px;
+  top: 340px;
+
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+  font-size: 60px;
+
+}
+
+/* box end */
