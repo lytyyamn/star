@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="永夜星河系列物料周边购物页面">
+  <meta name="keywords" content="永夜星河,物料周边,购物车">
+  <title>周边（2）</title>
+  <link rel="stylesheet" href="5.物料整理.css">
+</head>
+
+<body>
+  <div class="bigbox w">
+    <header>
+      <div class="nav">
+        <!-- logo部分 -->
+        <div class="logo">
+          <img src="img/图标2.png" alt="网站图标">
+        </div>
+        <ul class="character-icons">
+          <li><img src="img/姐姐豆豆.png" alt="姐姐豆豆"></li>
+          <li><img src="img/妙妙豆豆.png" alt="妙妙豆豆"></li>
+          <li><img src="img/子期豆豆.png" alt="子期豆豆"></li>
+          <li><img src="img/姐夫豆豆.png" alt="姐夫豆豆"></li>
+        </ul>
+      </div>
+    </header>
+    <!-- nav start -->
+    <nav>
+      <ul class="main-nav">
+        <li><a href="1.首页.html"><span>首页</span></a></li>
+        <li><a href="2.主要角色.html"><span>主要角色</span></a></li>
+        <li><a href="3.团综.html"><span>团综</span></a></li>
+        <li><a href="4.幕后花絮.html"><span>幕后花絮</span></a></li>
+        <li class="m"><span>物料周边</span></li>
+        <li><a href="https://v.qq.com/" target="_blank">前往腾讯视频观看</a></li>
+        <li class="music">
+          <audio src="虞书欣-澎湃 (2024-2025湖南卫视跨年晚会现场)(超清).mp3" autoplay loop controls>
+            你的浏览器不支持 audio 元素。
+          </audio>
+          <span>主题曲《澎湃》</span>
+        </li>
+      </ul>
+    </nav>
+    <!-- nav end -->
+    <!-- box start -->
+    <div class="box">
+      <h3>购物车</h3>
+      <div class="shop">
+        <ul class="product-list">
+          <li class="left">
+            <img src="zb.img/妙妙手机背夹挂绳.jpg" alt="永夜星河凌妙妙手机背夹挂绳">
+            <p>《永夜星河》凌妙妙手机背夹挂绳</p>
+            <div class="product-price">￥39.9<span class="add-to-cart">加入购物车</span></div>
+          </li>
+          <li>
+            <img src="zb.img/凌妙妙飘带手绳.jpg" alt="永夜星河凌妙妙飘带手绳">
+            <p>《永夜星河》凌妙妙飘带手绳</p>
+            <div class="product-price">￥49.9<span class="add-to-cart">加入购物车</span></div>
+          </li>
+          <li>
+            <img src="zb.img/凌妙妙手捻.jpg" alt="永夜星河凌妙妙人物手捻">
+            <p>《永夜星河》凌妙妙人物手捻</p>
+            <div class="product-price">￥69<span class="add-to-cart">加入购物车</span></div>
+          </li>
+          <li>
+            <img src="zb.img/慕声手捻.jpg" alt="永夜星河慕声人物手捻">
+            <p>《永夜星河》慕声人物手捻</p>
+            <div class="product-price">￥69<span class="add-to-cart">加入购物车</span></div>
+          </li>
+          <li class="left">
+            <img src="zb.img/妙妙一娃一衣.jpg" alt="凌妙妙一娃一衣（10cm）">
+            <p>凌妙妙一娃一衣（10cm）</p>
+            <div class="product-price">￥129<span class="add-to-cart">加入购物车</span></div>
+          </li>
+          <li>
+            <img src="zb.img/慕声一娃一衣.jpg" alt="慕声一娃一衣">
+            <p>慕声一娃一衣</p>
+            <div class="product-price">￥129<span class="add-to-cart">加入购物车</span></div>
+          </li>
+          <li>
+            <img src="zb.img/捉妖柄戒指复刻.jpg" alt="永夜星河捉妖柄戒指复刻">
+            <p>《永夜星河》捉妖柄戒指复刻</p>
+            <div class="product-price">￥89<span class="add-to-cart">加入购物车</span></div>
+          </li>
+          <li>
+            <img src="zb.img/永夜星河书境界时空珍藏设定集.jpg" alt="永夜星河书境界时空珍藏设定集">
+            <p>《永夜星河》书境界时空珍藏设定集</p>
+            <div class="product-price">￥168<span class="add-to-cart">加入购物车</span></div>
+          </li>
+        </ul>
+      </div>
+      <div class="page">
+        <ul class="pagination">
+          <li>...</li>
+          <li><a href="5.物料整理.html">1</a></li>
+          <li>2</li>
+          <li><a href="5.物料整理3.html">3</a></li>
+          <li>...</li>
+        </ul>
+      </div>
+      <a href="5.物料整理.html" class="zuo">
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-keji"></use>
+        </svg>
+      </a>
+      <a href="5.物料整理3.html" class="you">
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-keji"></use>
+        </svg>
+      </a>
+    </div>
+    <!-- box end -->
+  </div>
+  <script>
+    // 获取所有的“加入购物车”按钮
+    const addToCartButtons = document.querySelectorAll('.add-to-cart');
+
+    // 为每个按钮添加点击事件监听器
+    addToCartButtons.forEach(button => {
+      button.addEventListener('click', function () {
+        // 获取商品名称
+        const productName = this.dataset.product;
+        // 弹出提示框表示商品已加入购物车
+        alert(`${productName} 已加入购物车`);
+      });
+    });
+  </script>
+</body>
+<script src="font_i6535jbigp/iconfont.js"></script>
+
+</html>

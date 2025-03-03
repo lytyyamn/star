@@ -1,0 +1,332 @@
+* {
+  margin: 0;
+  padding: 0
+}
+
+em,
+i {
+  font-style: normal
+}
+
+li {
+  list-style: none
+}
+
+img {
+  /* border 0 照顾低版本浏览器 如果 图片外面包含了链接会有边框的问题 */
+  border: 0;
+  /* 取消图片底侧有空白缝隙的问题 */
+  vertical-align: middle
+}
+
+a {
+  text-decoration: none
+}
+
+button,
+input {
+  /* "\5B8B\4F53" 就是宋体的意思 这样浏览器兼容性比较好 */
+  font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif
+}
+
+body {
+  /* CSS3 抗锯齿形 让文字显示的更加清晰 */
+  -webkit-font-smoothing: antialiased;
+  background-color: #fff;
+  font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+  /* color: #666 */
+}
+
+.hide,
+.none {
+  display: none
+}
+
+/* 清除浮动 */
+.clearfix:after {
+  visibility: hidden;
+  clear: both;
+  display: block;
+  content: ".";
+  height: 0
+}
+
+.clearfix {
+  *zoom: 1
+}
+
+/* 初始化end */
+/* .w {
+  margin: 0 auto;
+} */
+
+body {
+  background-color: #dc9fdd;
+}
+
+.bigbox {
+  background: url(img/背景1.jpg) no-repeat;
+  /* position: relative; */
+  width: 1078px;
+  height: 825px;
+  /* background-color: #ccc; */
+}
+
+header {
+  height: 50px;
+  background-color: rgba(148, 61, 117, 0.7);
+}
+
+/* logo start */
+.logo {
+  float: left;
+  margin-top: 3px;
+}
+
+img {
+  height: 40px;
+
+}
+
+
+header ul li {
+  float: right;
+  margin-right: 25px;
+  margin-top: 5px;
+}
+
+/* logo end */
+/* nav start */
+nav {
+  height: 35px;
+  position: relative;
+  top: 0;
+  /* background-color: blue; */
+  background: rgba(0, 0, 0, 0.7);
+}
+
+nav ul li a {
+  color: #551a8b
+}
+
+.m {
+  border-bottom: 2px solid #dc9fdd;
+  color: #dc9fdd;
+}
+
+nav ul li {
+  color: #dc9fdd;
+  float: left;
+  line-height: 35px;
+  font-size: 14px;
+  margin-right: 20px;
+  padding: 0 10px;
+}
+
+nav ul li a:hover {
+  border-bottom: 2px solid #dc9fdd;
+  color: #dc9fdd;
+}
+
+nav ul .music {
+  position: relative;
+  margin-top: 3px;
+  /* right: 120px; */
+  height: 30px;
+  width: 300px;
+  line-height: 28px;
+  background-color: #6b1f6c;
+  border-radius: 15px;
+  float: right;
+}
+
+nav ul .music span {
+  position: absolute;
+  top: 0;
+  right: 14px;
+}
+
+audio {
+  position: absolute;
+  top: 0x;
+  right: 120px;
+  height: 30px;
+  width: 230px;
+}
+
+/* nav end */
+/* box start */
+.box {
+  position: relative;
+  height: 741px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+h3 {
+  margin: 0 auto;
+  width: 70px;
+  height: 30px;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 30px;
+  color: #6b1f6c;
+  background-color: rgba(190, 169, 190, 0.7);
+}
+
+.shop {
+  float: left;
+  height: 650px;
+  width: 938px;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin-left: 70px;
+  border-radius: 8%;
+}
+
+.shop ul li {
+  position: relative;
+  float: left;
+  margin-right: 10px;
+  margin-top: 10px;
+  width: 222px;
+  height: 280px;
+  color: #ffb000;
+  font-size: 16px;
+  background-color: pink;
+  background-color: rgb(0, 0, 0, .4);
+  border-radius: 20px;
+}
+
+.shop ul li:nth-child(1),
+.shop ul li:nth-child(2),
+.shop ul li:nth-child(3),
+.shop ul li:nth-child(4) {
+  margin-top: 40px;
+}
+
+
+.left {
+  margin-left: 10px;
+}
+
+.shop ul li img {
+  margin-top: 15px;
+  margin-left: 15px;
+  width: 190px;
+  height: 190px;
+}
+
+.shop ul li p {
+  margin-left: 15px;
+  font-size: 12px;
+  height: 40px;
+  width: 210px;
+  color: #fd85ff;
+}
+
+.shop ul li div {
+  padding-left: 15px;
+  width: 190px;
+}
+
+/* 修改加入购物车按钮的样式 */
+.shop ul li div span {
+  float: right;
+  color: #fbfafa;
+  width: 120px;
+  /* 适当增加宽度 */
+  height: 30px;
+  /* 适当增加高度 */
+  background-color: #ffb000;
+  border-radius: 18px;
+  /* 增加圆角 */
+  text-align: center;
+  line-height: 30px;
+  /* 与高度保持一致，实现垂直居中 */
+  font-size: 14px;
+  /* 调整字体大小 */
+  font-weight: bold;
+  /* 加粗字体 */
+  cursor: pointer;
+  /* 鼠标悬停时显示为手型 */
+  transition: all 0.3s ease;
+  /* 添加过渡效果 */
+}
+
+/* 鼠标悬停时的样式 */
+.shop ul li div span:hover {
+  background-color: #ffa500;
+  /* 改变背景颜色 */
+  transform: scale(1.05);
+  /* 轻微放大 */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  /* 添加阴影 */
+}
+
+.page ul {
+  width: 938px;
+  height: 650px;
+  margin-left: 70px;
+}
+
+.page ul li {
+  float: left;
+  width: 38px;
+  height: 40px;
+  border: 1px solid;
+  ;
+  margin: 10px;
+  color: #6b1f6c;
+  background-color: rgba(190, 169, 190, 0.7);
+  font-size: 20px;
+  text-align: center;
+  line-height: 40px;
+  list-style: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.page a {
+  color: #6b1f6c;
+}
+
+.page ul li:nth-child(1) {
+  margin-left: 325px;
+}
+
+.page ul li:hover {
+  transform: scale(1.2);
+}
+
+.zuo {
+  position: absolute;
+  left: 5px;
+  top: 320px;
+}
+
+.you {
+  position: absolute;
+  right: 5px;
+  top: 320px;
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+  font-size: 60px;
+
+}
+
+body {
+  zoom: 118%;
+  -moz-transform: scale(1.2);
+  /* 兼容Firefox */
+  -webkit-transform: scale(1.2);
+  /* 兼容Chrome和Safari */
+  transform: scale(1.2);
+  transform-origin: 0 0;
+  /* 设置缩放原点为左上角 */
+}
